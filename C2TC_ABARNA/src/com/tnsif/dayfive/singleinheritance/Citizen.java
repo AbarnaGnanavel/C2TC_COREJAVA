@@ -1,50 +1,61 @@
-package com.tns.ifet.dayfive;
+//Program to demonstrate Single level inheritance with this and super keywords
+package com.tnsif.dayfive.singleinheritance;
 
 public class Citizen {
 	private String name;
 	private String aadharNo;
 	private String address;
-	private String phone;
+	private long phno;
 	
+	
+
 	public Citizen() {
 		System.out.println("Citizen object created");
 	}
-	public Citizen(String name, String aadharNo, String address, String phone) {
-		super();
+
+	public Citizen(String name, String aadharNo, String address, long phno) {
+
 		this.name = name;
 		this.aadharNo = aadharNo;
 		this.address = address;
-		this.phone = phone;
+		this.phno = phno;
 	}
 
 	public String getName() {
 		return name;
 	}
+
 	public void setName(String name) {
 		this.name = name;
 	}
+
 	public String getAadharNo() {
 		return aadharNo;
 	}
+
 	public void setAadharNo(String aadharNo) {
 		this.aadharNo = aadharNo;
 	}
+
 	public String getAddress() {
 		return address;
 	}
+
 	public void setAddress(String address) {
 		this.address = address;
 	}
-	public String getPhone() {
-		return phone;
+
+	public long getPhno() {
+		return phno;
 	}
-	public void setPhone(String phone) {
-		this.phone = phone;
+
+	public void setPhno(long phno) {
+		this.phno = phno;
 	}
+
 	@Override
 	public String toString() {
-		return "Citizen [name=" + name + ", aadharNo=" + aadharNo + ", address=" + address + ", phone=" + phone + "]";
+		return "Citizen [name=" + name + ", aadharNo=" + aadharNo + ", address=" + address + ", phno=" + phno + "]";
 	}
-	
 
 }

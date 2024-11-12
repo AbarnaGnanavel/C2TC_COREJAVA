@@ -1,7 +1,7 @@
-package com.tns.ifet.dayfive;
+//Program to demonstrate Hierarchical Inheritance - Person Class
+package com.tnsif.dayfive.hierarchicalinheritance;
 
 public class Person {
-
 	private String name;
 	private String city;
 
@@ -36,5 +36,7 @@ public class Person {
 	public String toString() {
 		return "Person [name=" + name + ", city=" + city + "]";
 	}
+
+	
 
 }

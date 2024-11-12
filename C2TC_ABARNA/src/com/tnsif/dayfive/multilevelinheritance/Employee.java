@@ -1,13 +1,16 @@
-package com.tns.ifet.dayfive;
+//Program to define base class Employee
+package com.tnsif.dayfive.multilevelinheritance;
 
-public class Employe extends Person {
+import java.util.Date;
+
+public class Employee extends Person {
 	private String deptName;
 	private double baseSalary;
 	
-	public Employe() {}
+	public Employee() {}
 
-	public Employe(String deptName, double baseSalary) {
-		super();
+	public Employee(String name, long contactNo, Date dateOfBirth, String deptName, double baseSalary) {
+		super(name, contactNo, dateOfBirth);
 		this.deptName = deptName;
 		this.baseSalary = baseSalary;
 	}
@@ -30,9 +33,8 @@ public class Employe extends Person {
 
 	@Override
 	public String toString() {
-		return "Employe [deptName=" + deptName + ", baseSalary=" + baseSalary + "]";
+		return "Employee ["+super.toString()+", deptName=" + deptName + ", baseSalary=" + baseSalary + "]";
 	}
+
 	
-
-
 }

@@ -1,6 +1,5 @@
-package com.tns.ifet.dayfive;
-import com.tns.ifet.daythree.Person;
-
+//Program to demonstrate Hierarchical Inheritance - Employee Class
+package com.tnsif.dayfive.hierarchicalinheritance;
 public class Employee extends Person{
 	private int empId;
 	private float salary;
@@ -17,8 +16,10 @@ public class Employee extends Person{
 		this.salary = salary;
 		this.dept = dept;
 	}
+	
+	
 	public Employee(String name, String city,int empId, float salary, String dept) {
-		super();
+		super(name,city);
 		this.empId = empId;
 		this.salary = salary;
 		this.dept = dept;
@@ -53,10 +54,13 @@ public class Employee extends Person{
 	public void setDept(String dept) {
 		this.dept = dept;
 	}
+
+
+	@Override
 	public String toString() {
-		return "Employee [empId=" + empId + ", salary=" + salary + ", dept=" + dept + 
-		", getName()=" + getName()+ ", getCity()=" + getClass() + "]";
-		}
+		return "Employee [empId=" + empId + ", salary=" + salary + ", dept=" + dept + ", getName()=" + getName()
+				+ ", getCity()=" + getCity() + "]";
+	}
+	
 	
 }
-

@@ -1,5 +1,5 @@
-package com.tns.ifet.dayfive;
-
+////Program to demonstrate Hierarchical Inheritance - Student Class
+package com.tnsif.dayfive.hierarchicalinheritance;
 
 public class Student extends Person
 {
@@ -29,6 +29,10 @@ public class Student extends Person
 	}
 	public Student(String name, String city,String clas, float per )
 	{
+		//private members can't inherited into child class
+		/*
+		 * super.name=name; super.city=city;
+		 */
 		super(name,city);
 		this.clas = clas;
 		this.per = per;
@@ -37,4 +41,6 @@ public class Student extends Person
 	public String toString() {
 		return "Student [clas=" + clas + ", per=" + per + ", getName()=" + getName() + ", getCity()=" + getCity() + "]";
 	}
+	
+	
 }
