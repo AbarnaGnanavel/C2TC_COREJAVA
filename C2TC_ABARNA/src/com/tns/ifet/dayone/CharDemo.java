@@ -1,20 +1,26 @@
+//program to demonstrate char data type
 package com.tns.ifet.dayone;
 
 public class CharDemo {
-
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		char ch='a';
+		// assigning single character literal
+		char ch = 'a';
 		System.out.println(ch);
-		char ch1=65;
+
+		// assigning number to char
+		char ch1 = 65;
 		System.out.println(ch1);
-		char var1='\u00A7';
+
+		// assigning unicode to char
+		char var1 = '\u00A7';
 		System.out.println(var1);
-		char var2='\u20AC';
+
+		// Unicode representation
+		char var2 = '\u20AC';
 		System.out.println(var2);
-		char a='A';
+
+		// ASCI code representation
+		int a = 'A';
 		System.out.println(a);
-
 	}
-
 }
